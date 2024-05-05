@@ -3,6 +3,8 @@ package br.com.fiap.brindes.service;
 
 import org.springframework.data.domain.Example;
 
+import br.com.fiap.brindes.dtos.CategoriaRequestDTO;
+
 import java.util.Collection;
 
 /**
@@ -37,10 +39,10 @@ public interface ServiceDTO<Entity, Request, Response> {
     /**
      * Persiste uma entidade no banco de dados
      *
-     * @param e
+     * @param categoriaRequest
      * @return
      */
-    public Entity save(Entity e);
+    public Entity save(CategoriaRequestDTO categoriaRequest);
 
     /**
      * Transforma o RequestDTO em Entidade
